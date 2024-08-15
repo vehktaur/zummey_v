@@ -1,0 +1,119 @@
+.order-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 8em;
+    position: relative;
+    margin-bottom: 8em;
+    /* background-image: url('../../../assets/order-pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35% 0%; */
+   
+}
+
+.order-wrapper{
+    width: 85%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    color: white;
+    padding: 7em 2em;
+    background-image: url('../../../assets/order-pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35% 0%;
+}
+
+.order-wrapper h1{
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.order-wrapper p{
+    max-width: 650px;
+}
+
+.order-wrapper button{
+    width: 160px;
+    height: 50px;
+    background-color: #FF6B00;
+    color: white;
+    font-weight: 600;
+    font-size: .8rem;
+    border: none;
+    outline: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.order-wrapper a{
+    text-decoration: none;
+}
+
+.star1{
+    position: absolute;
+    left: 17px
+}
+
+.star2{
+    position: absolute;
+    right: 17px;
+    bottom: 0;
+}
+
+@media screen and (max-width: 740px){
+    .order-container img{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .order-wrapper{
+        padding: 3em 2em;
+        border-radius: 20px;
+    }
+
+    .star1{
+        left: 5px
+    }
+    
+    .star2{
+        position: absolute;
+        right: 8px;
+        bottom: 0;
+    }
+    
+
+}
+
+@media screen and (max-width: 442px){
+    .order-wrapper h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 442px){
+    .order-wrapper{
+        padding: 5em 2em;
+    }
+}
+
+@media screen and (max-width: 378px){
+    .order-wrapper{
+        padding: 3em 2em;
+        /* padding: 3em 0em; */
+    }
+
+    .order-wrapper h1{
+        font-size: 9vw;
+    }
+}

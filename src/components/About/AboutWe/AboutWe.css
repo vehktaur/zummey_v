@@ -1,0 +1,151 @@
+.about-we-container{
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.about-we-wrapper{
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+   
+}
+
+.about-we-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px)
+}
+
+.about-we-left h1{
+    font-weight: 600;
+    position: relative;
+    font-size: clamp(1.6rem, 4vw, 2rem);
+    width: max-content;
+}
+
+.about-we-left h1::after{
+    content: url('../../../assets/img-text2.png');
+    position: absolute;
+    right: -20px;
+    bottom: -30px;
+}
+
+.about-we-left p{
+    width: 600px;
+    line-height: 2.2;
+}
+
+.about-we-wrapper img{
+    width: 390px;
+    border-radius: 1em;
+}
+
+.registration-img .About-we-img-main{
+    opacity: 0;
+    transform: scale(.5);
+}
+
+.about-we-star {
+    position: absolute;
+    top: 30px;
+}
+
+.about-reg-vector{
+    position: absolute;
+    width: 130px !important;
+    top: 0%;
+    left: -128px;
+}
+
+@media screen and (max-width: 1174px){
+    .about-we-star{
+        position: absolute;
+        top: 30px;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 1132px){
+    .about-we-left p{
+        max-width: 500px;
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .about-reg-vector{
+        width: 90px !important;
+        top: 5%;
+        left: -90px;
+    }
+}
+
+@media screen and (max-width: 912px){
+    .about-reg-vector{
+        display: none;
+    }
+
+    .about-we-star {
+        top: 0;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 888px){
+    .about-we-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-we-left p{
+        max-width: 100%;
+        width: 100%;
+        
+    }
+
+    .registration-img{
+        width: 100% !important;
+        max-width: 100%;
+        margin-top: 0em;
+    }
+
+    .about-we-star{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 562px){
+    .about-we-left p{
+        font-size: clamp(0.85rem, 3vw, 1rem);
+    }
+}
+
+@media screen and (max-width: 528px){
+    .registration-img{
+        width: 100% !important;
+        max-width: 100%;
+        margin-top: 0em;
+    }
+
+    .registration-img img{
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+    .about-reg-vector{
+        display: block;
+        left: unset;
+        right: 0px;
+        top: -70px;
+    }
+}

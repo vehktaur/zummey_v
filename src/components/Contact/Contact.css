@@ -1,0 +1,80 @@
+.contact-container{
+    display: flex;
+    justify-content: center;
+    padding: 4em 0;
+    margin-top: 3em;
+    background-image: url('../../assets/contact-pattern.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-wrapper{
+    width: 90%;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.contact-wrapper h1{
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.contact-wrapper .sub-heading{
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+}
+
+.info{
+    color: #FF6B00;
+    font-weight: 500;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input{
+    border: none;
+    border-bottom: 1px solid #676D75;
+    outline: none;
+    padding: .7em 0;
+    background: none;
+    font-size: .9rem;
+    color: black;
+}
+
+::placeholder {
+    color: #676D75;
+}
+  
+:-ms-input-placeholder {
+    color: #676D75;
+}
+  
+::-ms-input-placeholder {
+    color: #676D75;
+}
+
+.contact-form button{
+    width: 160px;
+    height: 50px;
+    background-color: #FF6B00;
+    color: white;
+    font-weight: 600;
+    font-size: .8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 7px;
+    margin: 0 auto;
+}

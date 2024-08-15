@@ -1,0 +1,57 @@
+
+
+
+:root {
+  --orangePrimary: #FF6B00;
+  /* --toastify-color-success: #FF6B00 !important; */
+  --orangeGradient: linear-gradient(#F9B145, #FF0000);
+}
+
+html *, html *::before, html *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  height: 12px;
+  width: 12px;
+}
+  
+::-webkit-scrollbar-track{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#F9B145, #FF0000);
+  border-radius: 20px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+
+.center{
+  height: 100vh !important;
+  height: 100dvh !important;
+  width: 100% !important;
+  background-color: black;
+  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+*{
+  scroll-behavior: smooth;
+}

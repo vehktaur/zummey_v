@@ -1,0 +1,79 @@
+.notified-container{
+    min-height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 40.96%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.63) 100%, rgba(0, 0, 0, 0) 100%), url(../../../assets/about-hero-pic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    /* background-color: #FF6B00; */
+    color: white;
+    padding: 0 2em;
+}
+
+.notified-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.form-notified{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form-notified form{
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
+
+
+
+.form-notified input{
+    height: 45px;
+    padding: 0 1em;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 2em;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.form-notified input::placeholder{
+    font-size: 1.1rem;
+    color: black;
+}
+
+.form-notified button{
+    width: 150px;
+    background-color: #FF6B00;
+    border: none;
+    color: white;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+@media (width <= 539px ){
+    .form-notified input{
+        width: 100%;
+    }
+}
+
+@media (width <= 369px ){
+    .form-notified form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-notified input{
+        width: 90%;
+    }
+
+    .form-notified button{
+        height: 50px;
+    }
+}

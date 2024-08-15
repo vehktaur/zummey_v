@@ -1,0 +1,135 @@
+.about-reg-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 7em;
+    position: relative;
+}
+
+.about-reg-wrapper{
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.about-reg-wrapper img{
+    width: 350px;
+}
+
+.about-reg-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    padding: .5em 0;
+    transform: translateY(100px)
+}
+
+.reg-img{
+    opacity: 0;
+    transform: scale(.5);
+}
+
+.about-reg-left h1{
+    font-weight: 600;
+    position: relative;
+    max-width: fit-content;
+    font-size: clamp(1.4rem, 2.2vw, 3rem);
+}
+
+.about-reg-left h1::after{
+    content: url('../../../assets/registration-text-img.png');
+    position: absolute;
+    right: -40px;
+    top: -17px;
+}
+
+.about-reg-left p{
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+.about-reg-left button{
+    max-width: 360px;
+    height: 50px;
+    background-color: #FF6B00;
+    color: white;
+    font-weight: 600;
+    font-size: .8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 7px;
+}
+
+
+.about-star{
+    position: absolute;
+    top: 50%;
+}
+
+@media screen and (max-width: 1032px){
+    .about-star{
+        position: absolute;
+        top: 50%;
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 946px){
+    .about-star{
+        display: none;
+    }
+
+    .about-reg-wrapper img{
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 732px){
+    .about-reg-left h1::after{
+        content: url('../../../assets/registration-text-mobile-img.png');
+        right: -20px;
+        top: -8px;
+    }
+}
+
+@media screen and (max-width: 726px){
+    .about-reg-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .about-reg-wrapper img{
+        width: 60%;
+    }
+
+    .about-reg-left p{
+        max-width: 100%;
+    }
+
+    .about-reg-left{
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 622px){
+    .about-reg-left p{
+        font-size: clamp(0.85rem, 3vw, 1rem);
+    }
+}
+
+@media screen and (max-width: 422px){
+    .about-reg-wrapper img{
+        width: 100%;
+    }
+}

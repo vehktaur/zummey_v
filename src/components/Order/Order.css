@@ -1,0 +1,41 @@
+.order h1{
+    position: relative;
+    margin-bottom: 1em;
+    font-size: 3rem !important;
+}
+
+.order h1::after{
+    content: url('../../assets/text-img.png');
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: -24px;
+}
+
+.button-wrapper{
+    position: relative;
+}
+
+.button-wrapper input{
+    width: 100%;
+}
+
+.pick-up-btn{
+    background-color: #FF6B00;
+    width: 120px;
+    padding: .5em 0;
+    border-radius: .5em;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.map{
+    width: 500px;
+    margin: 0 auto;
+}

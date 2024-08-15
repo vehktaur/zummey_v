@@ -1,0 +1,165 @@
+.about-why-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 7em;
+}
+
+.about-why-wrapper{
+    width: 90%;
+    max-width: 1400px;
+}
+
+.about-why-wrapper h1{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    font-weight: 600;
+    padding-bottom: 1em;
+    position: relative;
+    max-width: fit-content;
+    font-size: clamp(1.4rem, 2.2vw, 3rem);
+}
+
+.about-why-wrapper h1::after{
+    content: url('../../../assets/courier-line.png');
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 7px;
+}
+
+.about-why-wrapper h1::before{
+    content: url('../../../assets/registration-text-img.png');
+    position: absolute;
+    right: -40px;
+    top: -17px;
+}
+
+.about-why-main{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+    position: relative;
+}
+
+.about-why-same {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+    /* This is how to add a border with gradiant and border radius also */
+    background: 
+    linear-gradient(#ffffff 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #F9B145, #FF0000);
+    border: 2px solid transparent;
+    padding: 1.5em 1.5em;
+    border-radius: 10px;
+}
+
+.about-why-four{
+    padding: 3em 1.5em;
+}
+
+.about-why-same h3{
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.about-why-same p{
+    max-width: 350px;
+    /* font-size: .8rem; */
+}
+
+.about-why-main> img{
+    position: absolute;
+    /* bottom: -55px; */
+    bottom: 0;
+    left: 26%;
+    width: 58%;
+}
+
+.about-download-desktop-why{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    grid-column: 3/4;
+    /* place-self: end; */
+    font-weight: 700;
+    width: 140px;
+    padding: 1.3em 0;
+    background-color: var(--orangePrimary);
+    font-size: .8rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.about-download-mobile-why{
+    display: none;
+}
+
+@media screen and (max-width: 1190px){
+    .about-why-main{
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+}
+
+@media screen and (max-width: 1018px){
+    .about-why-same p{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .about-why-main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-download-desktop-why{
+        display: none;
+    }
+
+    .about-download-mobile-why{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 2em;
+        font-weight: 700;
+        width: 140px;
+        padding: 1.3em 0;
+        background-color: var(--orangePrimary);
+        font-size: .8rem;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .about-line{
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width: 632px){
+    .about-why-main{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 704px){
+    .about-why-wrapper h1::before{
+        content: url('../../../assets/registration-text-mobile-img.png');
+        position: absolute;
+        right: -20px;
+        top: -8px;
+    }
+}

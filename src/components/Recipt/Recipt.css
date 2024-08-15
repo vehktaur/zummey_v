@@ -1,0 +1,116 @@
+.recipt-container{
+    
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/contact-pattern.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em 1em 7em 1em;
+}
+
+.whatsapp{
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.whatsapp img{
+    width: 50px;
+}
+
+.recipt-container .whatsapp-link{
+    color: black;
+}
+
+.order-heading{
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.order-heading::after{
+    content: url('../../assets/text-img.png');
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: -24px;
+}
+
+.recipt-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.recipt-wrapper h1{
+    text-align: center;
+}
+
+.order-summary{
+    margin-bottom: 3em;
+}
+
+.order-summary p{
+    margin-bottom: 1em;
+}
+
+.value{
+    width: 300px;
+    display: inline-block;
+    text-align: right;
+    
+}
+
+h1{
+    margin-bottom: 1em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.pay-container{
+    align-self: center;
+}
+
+.pay{
+    margin-top: 4em;
+    width: 200px;
+    height: 50px;
+    background-color: #FF6B00;
+    border: none;
+    color: white;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    border-radius: .5em;
+}
+
+.order-summary span{
+    margin-right: 3em;
+}
+
+.recipt-same{
+    display: flex;
+    justify-content: space-between;
+   
+    gap: 1em;
+}
+
+.recipt-same p:nth-child(1){
+    font-weight: bold;
+}
+
+.recipt-same p:nth-child(2){
+    word-break: break-all;
+}
+
+/* .cost-breakdown p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
