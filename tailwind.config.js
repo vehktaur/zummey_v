@@ -1,35 +1,37 @@
 /** @type {import('tailwindcss').Config} */
+
+import fluid, { extract, screens, fontSize } from 'fluid-tailwind';
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
-  ],
+  content: { files: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'], extract },
 
-  corePlugins: {
-    // Disable text-related core plugins
-    
-    fontWeight: false,
-    lineHeight: false,
-    letterSpacing: false,
-    textAlign: false,
-    width: false,
-    maxWidth: false,
-    // ...
-  },
-  
+  // corePlugins: {
+  //   // Disable text-related core plugins
+
+  //   fontWeight: false,
+  //   lineHeight: false,
+  //   letterSpacing: false,
+  //   textAlign: false,
+  //   width: false,
+  //   maxWidth: false
+  //   // ...
+  // },
+
   theme: {
+    screens,
+    fontSize,
     extend: {
-      fontSize: {
-        'xs': '0.75rem',
-        'sm': '0.875rem',
-        'base': '1rem',
-        'lg': '1.125rem',
-        'xl': '1.25rem',
-        '2xl': '1.5rem',
+      borderImage: {
+        'gradient-border':
+          'linear-gradient(to right, #F9B145 100%, #FF0000 100%, #FF6B00) 1'
       },
-    },
+      colors: {
+        'zummey-orange': '#FF6B00;'
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif']
+      }
+    }
   },
-  plugins: [],
-  variants: {},
-}
-
+  plugins: [fluid],
+  variants: {}
+};

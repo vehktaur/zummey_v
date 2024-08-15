@@ -70,49 +70,45 @@ const Header = () => {
 
   return (
     <div className={`nav-container ${scrolled ? 'backdrop-blur-sm bg-white/30 nav-color' : ''} ${showHamburger == false ? 'nav-mobile' : ''}`}>
-      <div className="nav-wrapper">
+      <div className="nav__flex">
+        <div className="nav-wrapper">
         
-        <NavLink to="/" className="desktop-logo"><img src={logo} alt="" className="desktop-logo" /></NavLink>
-
-        <NavLink to="/" className="mobile-logo"><img src={mobile_logo} alt="" className="mobile-logo" /></NavLink>
-
-        <div className="nav-link desktop-link">
-          <ul className='nav-link-main'>
-            <li><NavLink className={({ isActive }) => (isActive ? 'active': '')} to="/">Home</NavLink></li>
-            <li><NavLink to="/about">About us</NavLink></li>
-            {/* <li><NavLink to="javascript:void()">Riders</NavLink></li> */}
-            <li><NavLink to="/contact">Contact</NavLink></li>
-            
-          </ul>
-        </div>
-
-        <NavLink to="/location"><button className="download desktop-link">Use Zummey</button></NavLink>
-
-        <div className={`mobile-link ${showHamburger == false ? 'mobile': ''}`}>
-          <div className="nav-link">
+          <NavLink to="/" className="desktop-logo"><img src={logo} alt="" className="desktop-logo" /></NavLink>
+          <NavLink to="/" className="mobile-logo"><img src={mobile_logo} alt="" className="mobile-logo" /></NavLink>
+          <div className="nav-link desktop-link">
             <ul className='nav-link-main'>
-              <li className='work'><NavLink className={({ isActive }) => (isActive ? 'active': '')} to="/">Home</NavLink></li>
+              <li><NavLink className={({ isActive }) => (isActive ? 'active': '')} to="/">Home</NavLink></li>
               <li><NavLink to="/about">About us</NavLink></li>
+              {/* <li><NavLink to="javascript:void()">Riders</NavLink></li> */}
               <li><NavLink to="/contact">Contact</NavLink></li>
+        
             </ul>
           </div>
-
-          <NavLink to="/location"><button className="download" data-aos={showHamburger ? 'fade-right' : 'none'}>Use Zummey</button></NavLink>
-        </div>
-
-        <div className="menu-icon" onClick={handleImageClick}>
-          <img
-            src={hamburger}
-            alt="Menu"
-            className={showHamburger ? 'visible' : 'hidden'}
-            id="hamburger"
-          />
-          <img
-            src={hamburgerX}
-            alt="Menu"
-            className={showHamburger ? 'hidden' : 'visible'}
-            id="hamburger"
-          />
+          <NavLink to="/location"><button className="download desktop-link">Make a Delivery</button></NavLink>
+          <div className={`mobile-link ${showHamburger == false ? 'mobile': ''}`}>
+            <div className="nav-link">
+              <ul className='nav-link-main'>
+                <li className='work'><NavLink className={({ isActive }) => (isActive ? 'active': '')} to="/">Home</NavLink></li>
+                <li><NavLink to="/about">About us</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
+              </ul>
+            </div>
+            <NavLink to="/location"><button className="download" data-aos={showHamburger ? 'fade-right' : 'none'}>Use Zummey</button></NavLink>
+          </div>
+          <div className="menu-icon" onClick={handleImageClick}>
+            <img
+              src={hamburger}
+              alt="Menu"
+              className={showHamburger ? 'visible' : 'hidden'}
+              id="hamburger"
+            />
+            <img
+              src={hamburgerX}
+              alt="Menu"
+              className={showHamburger ? 'hidden' : 'visible'}
+              id="hamburger"
+            />
+          </div>
         </div>
       </div>
     </div>

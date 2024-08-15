@@ -1,36 +1,39 @@
-
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --orangePrimary: #FF6B00;
+  --orangePrimary: #ff6b00;
   /* --toastify-color-success: #FF6B00 !important; */
-  --orangeGradient: linear-gradient(#F9B145, #FF0000);
+  --orangeGradient: linear-gradient(#f9b145, #ff0000);
 }
 
-html *, html *::before, html *::after {
+html *,
+html *::before,
+html *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   height: 12px;
   width: 12px;
 }
-  
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 1px;
 }
 
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(#F9B145, #FF0000);
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#f9b145, #ff0000);
   border-radius: 20px;
 }
 
@@ -41,8 +44,7 @@ body{
   height: 100vh; /* Adjust as needed */
 }
 
-
-.center{
+.center {
   height: 100vh !important;
   height: 100dvh !important;
   width: 100% !important;
@@ -52,6 +54,32 @@ body{
   justify-content: center !important;
 }
 
-*{
+* {
   scroll-behavior: smooth;
+}
+
+@layer components {
+  .heading {
+    @apply font-poppins ~text-[2rem]/[2.5rem] font-bold;
+  }
+}
+
+@layer utilities {
+  .gradient-border {
+    border-width: 2px;
+    border-radius: 0.625rem;
+    border-style: solid;
+    border: 3px solid transparent;
+    background: linear-gradient(45deg, #fff, #fff) padding-box,
+      linear-gradient(to right, #f9b145 100%, #ff0000 100%, #ff6b00, #ffffff);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 32px;
 }

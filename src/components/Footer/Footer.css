@@ -6,7 +6,8 @@
 
 .footer-wrapper{
     width: 100%;
-    background-color: #F7F7F7;
+    background-color: #000;
+    color: white;
     border: 1px solid rgba(94, 100, 138, 0.10);
     padding: 3em 0;
     display: flex;
@@ -68,6 +69,11 @@
 .footer-link li{
     list-style-type: none;
     cursor: pointer;
+}
+
+.logo{
+    max-width: 4.75rem;
+    max-height: 3.47rem;
 }
 
 @media screen and (max-width: 1056px){
