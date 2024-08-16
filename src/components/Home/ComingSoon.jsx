@@ -12,6 +12,14 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { NavLink, Link } from 'react-router-dom';
 
 const ComingSoon = ({ heading }) => {
+  const previews = [
+    appPreview,
+    appPreview2,
+    appPreview3,
+    appPreview4,
+    appPreview5
+  ];
+
   return (
     <div className=" px-5 ~pt-12/[4.5rem] ~pb-12/[4.55rem] bg-zummey bg-no-repeat bg-cover mt-16">
       <div className="max-w-[70rem] mx-auto">
@@ -49,7 +57,7 @@ const ComingSoon = ({ heading }) => {
             </Link>
           </div>
           <Swiper
-            spaceBetween={30}
+            spaceBetween={50}
             autoplay={{ delay: 2000 }}
             centeredSlides={true}
             pagination={{ clickable: true }}
@@ -59,51 +67,17 @@ const ComingSoon = ({ heading }) => {
             <span className=" hidden md:block z-[-1] absolute -top-12 left-[20%] w-[35rem]">
               <img src={arrow} alt="down arrow" />
             </span>
-            <SwiperSlide>
-              <div>
-                <img
-                  className="block relative z-[1]"
-                  src={appPreview}
-                  alt="Mobile App"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  className="block relative z-[1]"
-                  src={appPreview2}
-                  alt="Mobile App"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  className="block relative z-[1]"
-                  src={appPreview3}
-                  alt="Mobile App"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  className="block relative z-[1]"
-                  src={appPreview4}
-                  alt="Mobile App"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  className="block relative z-[1]"
-                  src={appPreview5}
-                  alt="Mobile App"
-                />
-              </div>
-            </SwiperSlide>
+            {previews.map((preview, index) => (
+              <SwiperSlide key={index}>
+                <div className="rounded-3xl shadow-md overflow-hidden border-[length:2px] border-black">
+                  <img
+                    className="block relative z-[1]"
+                    src={preview}
+                    alt="Mobile App"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
