@@ -24,7 +24,7 @@ const ComingSoon = ({ heading }) => {
     <div className=" px-5 ~pt-12/[4.5rem] ~pb-12/[4.55rem] bg-zummey bg-no-repeat bg-cover mt-16">
       <div className="max-w-[70rem] mx-auto">
         <div className="flex flex-col md:flex-row-reverse gap-10 items-center justify-around">
-          <div>
+          <div className='~pe-0/12'>
             <h2 className="font-bold relative text-[2.5rem] md:~text-[2.5rem]/[4.37rem] md:~leading-[2.5rem]/[5rem] z-[1]">
               {heading}
               <span className="absolute bottom-0 -top-[4rem] -right-12 z-[-1] ~w-[2rem]/[4.56rem]">
