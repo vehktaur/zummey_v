@@ -2,7 +2,7 @@ import underline from '../../assets/underline_bu.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import bike from '../../assets/clean_bike.png';
-import curve from '../../assets/curve_cleaner.svg';
+import curve from '../../assets/clean_vector.svg';
 import { Link } from 'react-router-dom';
 
 const CleanEnvironment = () => {
@@ -41,12 +41,17 @@ const CleanEnvironment = () => {
             </div>
           </div>
 
-          <div className="rounded-[0.625rem] border-[length:3px] border-zummey-orange overflow-hidden xl:max-w-[26.82rem] shadow-zummey-blue max-h-[26rem]">
+          <div className="rounded-[0.625rem] border-[length:3px] border-zummey-orange xl:max-w-[26.82rem] shadow-zummey-blue max-h-[26rem] me-auto relative">
             <img
-              className="block w-full object-cover h-full"
+              className="hidden xl:block absolute left-[83%] -bottom-[6.5rem] w-[25rem] h-[23rem]"
+              src={curve}
+              alt="vector"
+            />
+            <img
+              className="block w-full object-cover h-full rounded-[0.6rem]"
               src={bike}
               alt="bike"
-            />{' '}
+            />
           </div>
         </div>
       </div>

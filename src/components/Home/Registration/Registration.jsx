@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Registration.css';
 import regImg from '../../../assets/home-registration-img.png';
-import regVector from '../../../assets/home-registration-vector.png';
+import regVector from '../../../assets/reg_vector.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -94,8 +94,8 @@ const Registration = () => {
             </div>
           </div>
 
-          <a href="#notify" className="get_notified">
-            <button className="btn-flex ~mt-10/16" data-aos="fade-right">
+          <a href="#notify" className="block">
+            <button className="btn-flex " data-aos="fade-right">
               Start using Zummey{' '}
               <FontAwesomeIcon
                 icon={faArrowRight}
@@ -108,29 +108,30 @@ const Registration = () => {
         </div>
 
         <div
-          className="home-registration-img"
+          className="home-registration-img mx-auto md:mx-0 mt-8 md:mt-0"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
           <img src={regImg} alt="" className="registration-img-main" />
-          <img src={regVector} alt="" className="reg-vector" />
+          <img
+            src={regVector}
+            alt=""
+            className=" w-[1000rem] rotate-[10deg] h-[33rem] hidden xl:block xl:scale-x-[1.9] right-[109.5%] top-[30%] absolute"
+          />
         </div>
 
-        <div className="flex justify-center w-full sm:hidden">
-            <Link to="/location" className="get_notified">
-              <button
-                className="registration-mobile-download btn-flex"
-                data-aos="fade-right"
-              >
-                Get notified when we launch our mobile App{' '}
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  bounce
-                  size="sm"
-                  style={{ color: '#ffffff' }}
-                />
-              </button>
-            </Link>
+        <div className="mobile_btn">
+          <a href="#notify" className="get_notified">
+            <button className="btn-flex ~mt-10/16" data-aos="fade-right">
+              Start using Zummey{' '}
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                bounce
+                size="sm"
+                style={{ color: '#ffffff' }}
+              />
+            </button>
+          </a>
         </div>
       </div>
     </div>

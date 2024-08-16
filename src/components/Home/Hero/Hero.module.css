@@ -122,7 +122,7 @@
 
 .hero_star {
   position: absolute;
-  width: 20px;
+  width: clamp(1.5rem, 4vw, 2.25rem);
 }
 
 .hero_wrapper > :nth-child(1) {
@@ -135,7 +135,7 @@
 }
 
 .hero_wrapper > :nth-child(3) {
-  bottom: 0;
+  bottom: clamp(0rem, 20vw, 7rem);
   right: 0;
 }
 

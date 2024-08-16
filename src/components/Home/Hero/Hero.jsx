@@ -1,9 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import css from './Hero.module.css';
-import appStore from '../../../assets/app-store.png';
-import googleStore from '../../../assets/google-store.png';
-import heroBoth from '../../../assets/hero-both.png';
+import phone from '../../../assets/phone.png';
 import rider from '../../../assets/hero_rider.jfif';
 import heroPackage from '../../../assets/hero_package.png';
 import payment from '../../../assets/payment.svg';
@@ -162,7 +160,8 @@ const Hero = () => {
                 />
               </button>
             </NavLink>
-            <p className={`${css.call__text} pb-6`}>
+            <p className={`${css.call__text} pb-6 flex ~gap-2/3 items-center`}>
+              <img className="block ~w-[1rem]/[1.37rem]" src={phone} alt="phone" />
               Call us for a delivery instead:{' '}
               <strong className="inline-block relative">
                 09068499532
@@ -184,11 +183,11 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex items-center gap-2 p-2 backdrop-blur-[15.5px] bg-[#F2F2F282] rounded-[0.81rem] max-w-[15rem] absolute right-[-10%] bottom-[40%] z-[1]">
+            <div className="flex items-center gap-2 p-2 backdrop-blur-[15.5px] bg-[#F2F2F282] rounded-[0.81rem] max-w-[15rem] absolute ~right-[-3rem]/[-4rem] bottom-[15%] sm:bottom-[30%] z-[1]">
               <img src={payment} alt="delivered" />
               <div className="grid font-medium text-sm">
                 <span>Payment Received </span>
-                <span>₦400</span>
+                <span className="text-[#DE7E5D]">₦400</span>
               </div>
             </div>
 

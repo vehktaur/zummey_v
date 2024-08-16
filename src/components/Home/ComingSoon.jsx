@@ -3,6 +3,7 @@ import appPreview2 from '../../assets/preview_2.jpg';
 import appPreview3 from '../../assets/preview_3.jpg';
 import appPreview4 from '../../assets/preview_4.jpg';
 import appPreview5 from '../../assets/preview_5.jpg';
+import star from '../../assets/hero-star.png';
 import sparkle from '../../assets/sparkle.svg';
 import arrow from '../../assets/down_arrow_coming.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -21,13 +22,17 @@ const ComingSoon = ({ heading }) => {
   ];
 
   return (
-    <div className=" px-5 ~pt-12/[4.5rem] ~pb-12/[4.55rem] bg-zummey bg-no-repeat bg-cover mt-16">
+    <div className=" px-5 ~pt-12/[4.5rem] ~pb-12/[4.55rem] bg-zummey bg-no-repeat bg-cover mt-16 relative">
+      <img src={star} alt="" className='absolute ~w-[1.5rem]/[2.2rem] left-[4%] top-[2rem]'  />
+      <img src={star} alt="" className='absolute ~w-[1.5rem]/[2.2rem] bottom-[30%] left-[2%]' />
+      <img src={star} alt="" className='absolute ~w-[1.5rem]/[2.2rem] bottom-[20%] left-[45%]' />
+      <img src={star} alt="" className='absolute ~w-[1.5rem]/[2.2rem] right-[5%] bottom-[8rem]' />
       <div className="max-w-[80rem] mx-auto">
         <div className="flex flex-col md:flex-row-reverse gap-10 items-center justify-around">
           <div className="~pe-0/12">
             <h2 className="font-bold relative text-[2rem] md:~text-[2rem]/[4.37rem] md:~leading-[2rem]/[5rem] z-[1]">
               {heading}
-              <span className="absolute bottom-0 -top-[4rem] ~right-[5rem]/[3rem] z-[-1] ~w-[2rem]/[4.56rem]">
+              <span className="absolute bottom-0 -top-[4rem] ~right-[5rem]/[-3rem] z-[-1] ~w-[2rem]/[4.56rem]">
                 <img
                   className="object-fit block w-full h-full"
                   src={sparkle}
@@ -46,7 +51,7 @@ const ComingSoon = ({ heading }) => {
                 <li>Promos and freebies</li>
               </ul>
             </div>
-            <Link to="/#notify" className="btn-flex text-center">
+            <Link to="/#notify" className="btn-flex text-center w-full md:w-[95%] mx-auto mt-6">
               Get notified when we Launch our Mobile App
               <FontAwesomeIcon
                 icon={faArrowRight}
@@ -56,7 +61,7 @@ const ComingSoon = ({ heading }) => {
               />
             </Link>
           </div>
-          <div className='max-w-[100%]'>
+          <div className="max-w-[100%]">
             <Swiper
               spaceBetween={50}
               autoplay={{ delay: 2000 }}
