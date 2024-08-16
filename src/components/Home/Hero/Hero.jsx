@@ -10,6 +10,7 @@ import payment from '../../../assets/payed.png';
 import delivered from '../../../assets/delivered.png';
 import star from '../../../assets/hero-star.png';
 import underline from '../../../assets/underline_swirl.svg';
+import { Typewriter } from 'react-simple-typewriter';
 
 // This is for font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -33,8 +34,6 @@ const Hero = () => {
     'Accessories',
     'Waybill'
   ];
-
-  const [word, setWord] = useState(0);
 
   useEffect(() => {
     let tl = gsap.timeline({
@@ -132,20 +131,6 @@ const Hero = () => {
     //Annimation for track section ends here
   }, []);
 
-  useEffect(() => {
-    const toggleWords = () => {
-      if (word >= 6) {
-        setWord(0);
-      } else {
-        setWord((prev) => prev + 1);
-      }
-    };
-
-    const intervalId = setInterval(toggleWords, 2000);
-
-    return () => clearInterval(intervalId);
-  }, [word, words.length]);
-
   return (
     <div className={css.hero_container}>
       <div className={css.hero_pattern}>
@@ -155,7 +140,10 @@ const Hero = () => {
           <img src={star} alt="" className={css.hero_star} />
           <div className={`${css.hero_left} `} ref={heroLeftRef}>
             <h1 style={{ lineHeight: 'normal' }}>
-              Get <span className={css.orange__text}>{words[word]}</span>{' '}
+              Get{' '}
+              <span className={css.orange__text}>
+                <Typewriter words={words} loop={false} />
+              </span>{' '}
               Delivered in Minutes
             </h1>
             <p>
