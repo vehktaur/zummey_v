@@ -133,8 +133,8 @@
 }
 
 @media screen and (max-width: 708px) {
-  .desktop-link {
-    display: none;
+  .desktop-link, .none {
+    display: none !important;
   }
 
   .menu-icon {

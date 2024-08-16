@@ -11,10 +11,10 @@ const ServeCustomers = () => {
 
   return (
     <div className="px-5 sm:~px-8/16 py-12 mt-10">
-      <div className="max-w-[70rem] mx-auto">
+      <div className="max-w-[80rem] mx-auto">
         <div className="flex flex-col md:flex-row items-end justify-between ~gap-12/16">
           <div className="max-w-[30rem]">
-            <h1 className="font-semibold ~text-[2rem]/[2.5rem] relative ~mb-6/8">
+            <h1 className="font-semibold ~text-[2rem]/[2rem] relative ~mb-6/8">
               We help you serve your customers better
               <span className="absolute -top-6 ~right-[0.5rem]/[-3rem] z-[-1] ~w-[2.75rem]/[4.56rem]">
                 <img

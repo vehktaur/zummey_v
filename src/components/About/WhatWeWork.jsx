@@ -7,20 +7,21 @@ const WhatWeWork = () => {
     {
       title: 'Accessibility',
       description:
-        "We're passionate about making delivery accessible to everyone, regardless of their walk of life."
+        "We're passionate about making delivery accessible to everyone, regardless of their walk of life"
     },
     {
       title: 'Trustworthiness',
       description:
-        'Our commitment to trust ensures that our customers feel confident in our services.'
+        'Our commitment to trust ensures that our customers feel confident in our services'
     },
     {
       title: 'Affordability',
-      description: 'We strive to keep our delivery services affordable for all.'
+      description: 'We strive to keep our delivery services affordable for all'
     },
     {
-      title: 'Affordability',
-      description: 'We strive to keep our delivery services affordable for all.'
+      title: 'Sustainability',
+      description:
+        'Eco-friendly bikes and packaging with a communal focus for growth and development'
     }
   ];
 
@@ -29,7 +30,7 @@ const WhatWeWork = () => {
       <span className="absolute ~top-[-3rem]/[-1.5rem] z-[-2] left-[50%]">
         <img src={arrow} alt="arrow" />
       </span>
-      <div className="relative max-w-[70rem] mx-auto text-center">
+      <div className="relative max-w-[80rem] mx-auto text-center">
         <span className="absolute -top-10 left-0 [rotate:_y_-180deg] ~w-[2.75rem]/[4.56rem]">
           <img src={sparkle} alt="sparkle" />
         </span>
@@ -45,7 +46,7 @@ const WhatWeWork = () => {
           {values.map((value, index) => (
             <div
               key={index}
-              className="bg-[#FF6B0038] rounded-[1.22rem] ~px-6/8 pt-8 pb-16 max-w-[18rem]"
+              className="bg-[#FF6B0038] rounded-lg sm:rounded-[1.22rem] ~px-6/8 pt-8 pb-16 max-w-[21rem]"
             >
               <h3 className="text-[1.52rem] font-semibold ~mb-6/8">
                 {value.title}

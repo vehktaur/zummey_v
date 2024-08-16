@@ -27,12 +27,12 @@ const PremiumService = () => {
 
   return (
     <div className="bg-[#FFEFEC] px-5 ~pt-12/[4.5rem] ~pb-12/[4.55rem] mt-16">
-      <div className="max-w-[70rem] mx-auto">
+      <div className="max-w-[80rem] mx-auto">
         <h2 className="heading text-center relative ">
           Premium Service that costs Much{' '}
           <span className="relative inline-block z-[1]">
             Less{' '}
-            <span className=" absolute bottom-0 -top-4 -right-12 z-[-1] ~w-[2rem]/[4.56rem]">
+            <span className=" absolute bottom-0 -top-4 ~right-[3rem]/[3rem] z-[-1] ~w-[2rem]/[4.56rem]">
               <img
                 className="object-fit block w-full h-full"
                 src={sparkle}

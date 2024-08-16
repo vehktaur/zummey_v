@@ -116,20 +116,22 @@ const Registration = () => {
           <img src={regVector} alt="" className="reg-vector" />
         </div>
 
-        <Link to="/location" className="get_notified">
-          <button
-            className="registration-mobile-download"
-            data-aos="fade-right"
-          >
-            Get notified when we launch our mobile App{' '}
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              bounce
-              size="sm"
-              style={{ color: '#ffffff' }}
-            />
-          </button>
-        </Link>
+        <div className="flex justify-center w-full sm:hidden">
+            <Link to="/location" className="get_notified">
+              <button
+                className="registration-mobile-download btn-flex"
+                data-aos="fade-right"
+              >
+                Get notified when we launch our mobile App{' '}
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  bounce
+                  size="sm"
+                  style={{ color: '#ffffff' }}
+                />
+              </button>
+            </Link>
+        </div>
       </div>
     </div>
   );

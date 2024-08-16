@@ -143,7 +143,8 @@ const Hero = () => {
               Get{' '}
               <span className={css.orange__text}>
                 <Typewriter words={words} loop={false} />
-              </span>{' '}
+              </span>
+              <br />
               Delivered in Minutes
             </h1>
             <p>
@@ -151,7 +152,7 @@ const Hero = () => {
               delivery anywhere in Benin City for as low as 400 naira now!
             </p>
             <NavLink to="/location">
-              <button className='btn-flex'>
+              <button className="btn-flex">
                 Make a Delivery Now
                 <FontAwesomeIcon
                   icon={faArrowRight}

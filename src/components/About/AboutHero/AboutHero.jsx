@@ -35,11 +35,14 @@ const AboutHero = () => {
     <div className="about-hero-container  relative text-white px-5 sm:~px-8/16 pt-[3.69rem] pb-[6.69rem]">
       <div className="absolute inset-0 bg-about-hero brightness-50 z-[-1] " />
       <div
-        className="about-hero-wrapper text-center font-poppins max-w-[70rem] mx-auto"
+        className="about-hero-wrapper text-center font-poppins max-w-[80rem] mx-auto"
         ref={AboutHero}
       >
         <h1 className="~text-[2rem]/[2.2rem] font-bold relative">
-          ABOUT US <span className='block absolute left-[50%] translate-x-[-50%] top-[100%]'><img src={underline} alt="underline" /></span>
+          ABOUT US{' '}
+          <span className="block absolute left-[50%] translate-x-[-50%] top-[100%]">
+            <img src={underline} alt="underline" />
+          </span>
         </h1>
         <p className="mt-12">
           At Zummey, we firmly believe that delivery should be a daily part of

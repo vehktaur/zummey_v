@@ -22,12 +22,12 @@ const ComingSoon = ({ heading }) => {
 
   return (
     <div className=" px-5 ~pt-12/[4.5rem] ~pb-12/[4.55rem] bg-zummey bg-no-repeat bg-cover mt-16">
-      <div className="max-w-[70rem] mx-auto">
+      <div className="max-w-[80rem] mx-auto">
         <div className="flex flex-col md:flex-row-reverse gap-10 items-center justify-around">
-          <div className='~pe-0/12'>
-            <h2 className="font-bold relative text-[2.5rem] md:~text-[2.5rem]/[4.37rem] md:~leading-[2.5rem]/[5rem] z-[1]">
+          <div className="~pe-0/12">
+            <h2 className="font-bold relative text-[2rem] md:~text-[2rem]/[4.37rem] md:~leading-[2rem]/[5rem] z-[1]">
               {heading}
-              <span className="absolute bottom-0 -top-[4rem] -right-12 z-[-1] ~w-[2rem]/[4.56rem]">
+              <span className="absolute bottom-0 -top-[4rem] ~right-[5rem]/[3rem] z-[-1] ~w-[2rem]/[4.56rem]">
                 <img
                   className="object-fit block w-full h-full"
                   src={sparkle}
@@ -46,7 +46,7 @@ const ComingSoon = ({ heading }) => {
                 <li>Promos and freebies</li>
               </ul>
             </div>
-            <Link to="/#notify" className="btn-flex">
+            <Link to="/#notify" className="btn-flex text-center">
               Get notified when we Launch our Mobile App
               <FontAwesomeIcon
                 icon={faArrowRight}
@@ -56,29 +56,31 @@ const ComingSoon = ({ heading }) => {
               />
             </Link>
           </div>
-          <Swiper
-            spaceBetween={50}
-            autoplay={{ delay: 2000 }}
-            centeredSlides={true}
-            pagination={{ clickable: true }}
-            modules={[Autoplay, Pagination]}
-            className="relative max-w-[20rem] pb-16"
-          >
-            <span className=" hidden md:block z-[-1] absolute -top-12 left-[20%] w-[35rem]">
-              <img src={arrow} alt="down arrow" />
-            </span>
-            {previews.map((preview, index) => (
-              <SwiperSlide key={index}>
-                <div className="rounded-3xl shadow-md overflow-hidden border-[length:2px] border-black">
-                  <img
-                    className="block relative z-[1]"
-                    src={preview}
-                    alt="Mobile App"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div className='max-w-[100%]'>
+            <Swiper
+              spaceBetween={50}
+              autoplay={{ delay: 2000 }}
+              centeredSlides={true}
+              pagination={{ clickable: true }}
+              modules={[Autoplay, Pagination]}
+              className="relative max-w-[20rem] pb-16"
+            >
+              <span className=" hidden md:block z-[-1] absolute -top-12 left-[20%] w-[35rem]">
+                <img src={arrow} alt="down arrow" />
+              </span>
+              {previews.map((preview, index) => (
+                <SwiperSlide key={index}>
+                  <div className="rounded-3xl shadow-md overflow-hidden border-[length:2px] border-black">
+                    <img
+                      className="block relative z-[1]"
+                      src={preview}
+                      alt="Mobile App"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>

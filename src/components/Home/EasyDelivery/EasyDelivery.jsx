@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const EasyDelivery = () => {
   return (
     <div className="px-5 py-10 sm:~px-8/16">
-      <div className="flex flex-col md:flex-row-reverse justify-between ~gap-10/20 items-center flex-nowrap text-black max-w-[70rem] mx-auto text-center md:text-start">
+      <div className="flex flex-col md:flex-row-reverse justify-between ~gap-10/20 items-center flex-nowrap text-black max-w-[80rem] mx-auto text-center md:text-start">
         <div className="max-w-[34.9rem]">
           <p className="font-semibold text-base">Easy and Cheap Logistics</p>
           <h2 className="heading relative">

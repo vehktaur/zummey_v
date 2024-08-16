@@ -84,7 +84,7 @@ const Header = () => {
         
             </ul>
           </div>
-          <NavLink to="/location"><button className="btn-flex block max-w-[11.19rem] max-h-[3.25rem]">Make a Delivery</button></NavLink>
+          <NavLink to="/location"><button className="none btn-flex max-w-[11.19rem] max-h-[3.25rem]">Make a Delivery</button></NavLink>
           <div className={`mobile-link ${showHamburger == false ? 'mobile': ''}`}>
             <div className="nav-link">
               <ul className='nav-link-main'>

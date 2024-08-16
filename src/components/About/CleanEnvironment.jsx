@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const CleanEnvironment = () => {
   return (
     <div className="px-5 sm:~px-8/16 ~pt-[5.5rem]/[7.5rem] relative py-12">
-      <div className="relative max-w-[70rem] mx-auto text-center">
+      <div className="relative max-w-[80rem] mx-auto text-center">
         <div className="flex flex-col md:flex-row-reverse gap-12 md:h-[30rem]">
           <div className="max-w-[40rem] flex flex-col justify-end">
             <h2 className="relative ~text-[2rem]/[2.3125rem] font-semibold ~mb-6/8">
@@ -27,7 +27,7 @@ const CleanEnvironment = () => {
                 carbon footprints while maintaining fast and efficient service.
               </p>
               <Link
-                className="btn-flex max-w-[15.625rem] ~mt-8/14"
+                className="btn-flex max-w-[15.625rem] ~mt-8/14 mx-auto md:mx-0"
                 to="/location"
               >
                 Make a Delivery Now

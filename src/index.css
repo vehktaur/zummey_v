@@ -60,7 +60,7 @@ body {
 
 @layer components {
   .heading {
-    @apply font-poppins ~text-[2rem]/[2.5rem] font-bold;
+    @apply font-poppins ~text-[2rem]/[2rem] font-bold;
   }
 }
 
