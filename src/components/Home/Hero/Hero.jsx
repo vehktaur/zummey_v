@@ -1,9 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import css from './Hero.module.css';
 import appStore from '../../../assets/app-store.png';
 import googleStore from '../../../assets/google-store.png';
 import heroBoth from '../../../assets/hero-both.png';
+import rider from '../../../assets/hero_rider.jfif';
+import heroPackage from '../../../assets/hero_package.png';
 import payment from '../../../assets/payed.png';
 import delivered from '../../../assets/delivered.png';
 import star from '../../../assets/hero-star.png';
@@ -21,6 +23,18 @@ gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
   const heroLeftRef = useRef(null);
   const heroRightRef = useRef(null);
+
+  const words = [
+    'Food',
+    'Clothing',
+    'Medicine',
+    'Waybill',
+    'Gadgets',
+    'Accessories',
+    'Waybill'
+  ];
+
+  const [word, setWord] = useState(0);
 
   useEffect(() => {
     let tl = gsap.timeline({
@@ -118,6 +132,20 @@ const Hero = () => {
     //Annimation for track section ends here
   }, []);
 
+  useEffect(() => {
+    const toggleWords = () => {
+      if (word >= 6) {
+        setWord(0);
+      } else {
+        setWord((prev) => prev + 1);
+      }
+    };
+
+    const intervalId = setInterval(toggleWords, 2000);
+
+    return () => clearInterval(intervalId);
+  }, [word, words.length]);
+
   return (
     <div className={css.hero_container}>
       <div className={css.hero_pattern}>
@@ -127,8 +155,8 @@ const Hero = () => {
           <img src={star} alt="" className={css.hero_star} />
           <div className={`${css.hero_left} `} ref={heroLeftRef}>
             <h1 style={{ lineHeight: 'normal' }}>
-              Get <span className={css.orange__text}>Food</span> Delivered in
-              Minutes
+              Get <span className={css.orange__text}>{words[word]}</span>{' '}
+              Delivered in Minutes
             </h1>
             <p>
               We make your deliveries happen fast, easy and cheap. Make a
@@ -161,7 +189,22 @@ const Hero = () => {
           >
             <img src={payment} alt="" className={css.payment} />
             <img src={delivered} alt="" className={css.delivered} />
-            <img src={heroBoth} alt="" className={css.hero_both} />
+            <div className="flex gap-6 items-center">
+              <div className="h-[22.68rem] w-[15rem] rounded-[77.5rem] overflow-hidden border-[length:3px] border-zummey-orange">
+                <img
+                  src={heroPackage}
+                  alt=""
+                  className="w-full block h-full object-cover"
+                />
+              </div>
+              <div className="h-[30rem] w-[18rem] rounded-[77.5rem] overflow-hidden border-[length:3px] border-zummey-orange">
+                <img
+                  src={rider}
+                  alt=""
+                  className="w-full block h-full object-cover scale-125"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

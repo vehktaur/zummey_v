@@ -32,7 +32,7 @@ const PremiumService = () => {
           Premium Service that costs Much{' '}
           <span className="relative inline-block z-[1]">
             Less{' '}
-            <span className="hidden md:block absolute bottom-0 -top-4 -right-12 z-[-1] ~w-[2rem]/[4.56rem]">
+            <span className=" absolute bottom-0 -top-4 -right-12 z-[-1] ~w-[2rem]/[4.56rem]">
               <img
                 className="object-fit block w-full h-full"
                 src={sparkle}

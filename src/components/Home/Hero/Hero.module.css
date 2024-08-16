@@ -18,7 +18,7 @@
   position: relative;
   max-width: 70rem;
   min-height: 85vh;
-  padding: 6em 0;
+  padding: 3em 0;
 }
 
 .get_notified {
@@ -104,17 +104,20 @@
 
 .hero_right .payment {
   position: absolute;
-  width: 150px;
+  width: 15rem;
   right: 0;
-  bottom: 15%;
+  bottom: 25%;
+  z-index: 1;
 }
 
 .hero_right .delivered {
   position: absolute;
+  font-size: 0.875rem;
   width: 150px;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 45%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .hero_star {
@@ -144,6 +147,7 @@
 
 .orange__text {
   color: #ff6b00;
+  text-wrap: nowrap;
 }
 
 .call__text {
@@ -191,8 +195,6 @@
   .hero_wrapper {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 80px;
-
     padding: 0em 0em;
     gap: 2em;
   }

@@ -20,9 +20,16 @@ export default {
     screens,
     fontSize,
     extend: {
+      backgroundImage: {
+        zummey: 'url(/src/assets/zummey_bg.png)',
+        'about-hero': 'url(/src/assets/overlay_store.png)'
+      },
       borderImage: {
         'gradient-border':
           'linear-gradient(to right, #F9B145 100%, #FF0000 100%, #FF6B00) 1'
+      },
+      boxShadow: {
+        'zummey-blue': '0px 3px 5px 0px rgba(0, 108, 236, 0.39)'
       },
       colors: {
         'zummey-orange': '#FF6B00;'

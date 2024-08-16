@@ -1,9 +1,9 @@
-import easyDelivery from '../../../assets/easy_delivery.jpg';
+import easyDelivery from '../../../assets/rider.png';
 import ellipse from '../../../assets/ellipse.svg';
 
 const EasyDelivery = () => {
   return (
-    <div className="px-5 py-10">
+    <div className="px-5 py-10 sm:~px-8/16">
       <div className="flex flex-col md:flex-row-reverse justify-between ~gap-10/20 items-center flex-nowrap text-black max-w-[70rem] mx-auto text-center md:text-start">
         <div className="max-w-[34.9rem]">
           <p className="font-semibold text-base">Easy and Cheap Logistics</p>
@@ -29,9 +29,9 @@ const EasyDelivery = () => {
           </div>
         </div>
 
-        <div className="md:min-w-[22rem]">
+        <div className="md:min-w-[24rem] xl:min-w-[26.82rem] shadow-zummey-blue rounded-[0.625rem] md:~h-[20rem]/[25rem]">
           <img
-            className="block w-full max-w-[28rem] rounded-md border-2 shadow-blue-300 shadow-lg border-zummey-orange"
+            className="block w-full rounded-[0.625rem_6.25rem] aspect-square object-cover max-h-[27rem] h-full border-2  border-zummey-orange"
             src={easyDelivery}
             alt="Easy Delivery"
           />
