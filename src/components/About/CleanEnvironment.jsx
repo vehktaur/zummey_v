@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import bike from '../../assets/clean_bike.png';
 import curve from '../../assets/curve_cleaner.svg';
+import { Link } from 'react-router-dom';
 
 const CleanEnvironment = () => {
   return (
@@ -25,7 +26,10 @@ const CleanEnvironment = () => {
                 use electric bicycles for our deliveries, significantly reducing
                 carbon footprints while maintaining fast and efficient service.
               </p>
-              <a className="btn-flex max-w-[15.625rem] ~mt-8/14" href="#">
+              <Link
+                className="btn-flex max-w-[15.625rem] ~mt-8/14"
+                to="/location"
+              >
                 Make a Delivery Now
                 <FontAwesomeIcon
                   icon={faArrowRight}
@@ -33,7 +37,7 @@ const CleanEnvironment = () => {
                   size="sm"
                   style={{ color: '#ffffff' }}
                 />
-              </a>
+              </Link>
             </div>
           </div>
 

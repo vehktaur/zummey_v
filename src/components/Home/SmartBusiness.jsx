@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import box from '../../assets/delivery_box.png';
+import { Link } from 'react-router-dom';
 
 const SmartBusiness = () => {
   return (
@@ -16,7 +17,10 @@ const SmartBusiness = () => {
               Give yourself and your customers peace of mind. Partner with
               Zummey to give your customers sure delivery at cheap prices.
             </p>
-            <button className="flex gap-2 items-center rounded-[3.5rem] bg-zummey-orange max-w-[12.94rem] px-4 py-[0.9rem]">
+            <Link
+              to="/location"
+              className="flex gap-2 items-center rounded-[3.5rem] bg-zummey-orange max-w-[12.94rem] px-4 py-[0.9rem]"
+            >
               Make a Delivery
               <FontAwesomeIcon
                 icon={faArrowRight}
@@ -24,10 +28,14 @@ const SmartBusiness = () => {
                 size="sm"
                 style={{ color: '#ffffff' }}
               />
-            </button>
+            </Link>
           </div>
           <div className="max-w-[38rem]">
-            <img className="block md:~mt-[-5rem]/[-10rem] ~w-[28rem]/[30rem] mx-auto md:mx-0" src={box} alt="Delivery Box" />
+            <img
+              className="block md:~mt-[-5rem]/[-10rem] ~w-[28rem]/[30rem] mx-auto md:mx-0"
+              src={box}
+              alt="Delivery Box"
+            />
           </div>
         </div>
       </div>

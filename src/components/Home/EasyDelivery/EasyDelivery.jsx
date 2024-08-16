@@ -1,5 +1,6 @@
 import easyDelivery from '../../../assets/rider.png';
 import ellipse from '../../../assets/ellipse.svg';
+import { Link } from 'react-router-dom';
 
 const EasyDelivery = () => {
   return (
@@ -20,12 +21,12 @@ const EasyDelivery = () => {
           </p>
 
           <div className="flex justify-center md:justify-start mt-8">
-            <a
+            <Link
               className="block text-center bg-zummey-orange text-white px-1 py-3 rounded-[3.5rem] w-full max-w-[17.19rem] ~text-md/base"
-              href="#"
+              to="/location"
             >
               Send or Receive a Package
-            </a>
+            </Link>
           </div>
         </div>
 

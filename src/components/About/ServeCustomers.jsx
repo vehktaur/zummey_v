@@ -24,7 +24,7 @@ const ServeCustomers = () => {
                 />
               </span>
             </h1>
-            <p className='max-w-[28.5rem] mx-auto md:mx-0'>
+            <p className="max-w-[28.5rem] mx-auto md:mx-0">
               Your customers deserve the best service without having to pay so
               much for delivery. We believe that getting orders delivered should
               be affordable and convenient, ensuring that your customers have a
@@ -32,10 +32,7 @@ const ServeCustomers = () => {
               Zummey to serve your customers better and help your business grow
             </p>
 
-            <a
-              href="#"
-              className="btn-flex max-w-[11.56rem] ~mt-8/12"
-            >
+            <a href="/location" className="btn-flex max-w-[11.56rem] ~mt-8/12">
               Join Zummey
               <FontAwesomeIcon
                 icon={faArrowRight}

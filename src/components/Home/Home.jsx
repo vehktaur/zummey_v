@@ -21,6 +21,7 @@ const Home = () => {
       <Registration />
       <SmartBusiness />
       <ComingSoon heading="Coming Soon!" />
+      <Notified />
     </div>
   );
 };

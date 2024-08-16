@@ -8,6 +8,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 const Registration = () => {
   useEffect(() => {
@@ -115,7 +116,7 @@ const Registration = () => {
           <img src={regVector} alt="" className="reg-vector" />
         </div>
 
-        <a href="#notify" className="get_notified">
+        <Link to="/location" className="get_notified">
           <button
             className="registration-mobile-download"
             data-aos="fade-right"
@@ -128,7 +129,7 @@ const Registration = () => {
               style={{ color: '#ffffff' }}
             />
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );

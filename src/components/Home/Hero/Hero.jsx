@@ -151,7 +151,7 @@ const Hero = () => {
               delivery anywhere in Benin City for as low as 400 naira now!
             </p>
             <NavLink to="/location">
-              <button className={css.order}>
+              <button className='btn-flex'>
                 Make a Delivery Now
                 <FontAwesomeIcon
                   icon={faArrowRight}

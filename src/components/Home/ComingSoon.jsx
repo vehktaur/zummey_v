@@ -1,13 +1,15 @@
-import appPreview from '../../assets/app_preview.png';
-import appPreview2 from '../../assets/preview_2.png';
-import appPreview3 from '../../assets/preview_3.png';
-import appPreview4 from '../../assets/preview_4.png';
+import appPreview from '../../assets/preview_1.jpg';
+import appPreview2 from '../../assets/preview_2.jpg';
+import appPreview3 from '../../assets/preview_3.jpg';
+import appPreview4 from '../../assets/preview_4.jpg';
+import appPreview5 from '../../assets/preview_5.jpg';
 import sparkle from '../../assets/sparkle.svg';
 import arrow from '../../assets/down_arrow_coming.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { NavLink, Link } from 'react-router-dom';
 
 const ComingSoon = ({ heading }) => {
   return (
@@ -36,7 +38,7 @@ const ComingSoon = ({ heading }) => {
                 <li>Promos and freebies</li>
               </ul>
             </div>
-            <button className="btn-flex">
+            <Link to="/#notify" className="btn-flex">
               Get notified when we Launch our Mobile App
               <FontAwesomeIcon
                 icon={faArrowRight}
@@ -44,7 +46,7 @@ const ComingSoon = ({ heading }) => {
                 size="sm"
                 style={{ color: '#ffffff' }}
               />
-            </button>
+            </Link>
           </div>
           <Swiper
             spaceBetween={30}
@@ -57,6 +59,15 @@ const ComingSoon = ({ heading }) => {
             <span className=" hidden md:block z-[-1] absolute -top-12 left-[20%] w-[35rem]">
               <img src={arrow} alt="down arrow" />
             </span>
+            <SwiperSlide>
+              <div>
+                <img
+                  className="block relative z-[1]"
+                  src={appPreview}
+                  alt="Mobile App"
+                />
+              </div>
+            </SwiperSlide>
             <SwiperSlide>
               <div>
                 <img
@@ -80,6 +91,15 @@ const ComingSoon = ({ heading }) => {
                 <img
                   className="block relative z-[1]"
                   src={appPreview4}
+                  alt="Mobile App"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <img
+                  className="block relative z-[1]"
+                  src={appPreview5}
                   alt="Mobile App"
                 />
               </div>
