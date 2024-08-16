@@ -12,6 +12,7 @@ import Notified from '../Home/Notified/Notified';
 import WhatWeWork from './WhatWeWork';
 import ServeCustomers from './ServeCustomers';
 import CleanEnvironment from './CleanEnvironment';
+import ComingSoon from '../Home/ComingSoon';
 
 const About = () => {
   return (
@@ -20,6 +21,7 @@ const About = () => {
       <WhatWeWork />
       <ServeCustomers />
       <CleanEnvironment />
+      <ComingSoon heading="Join Our Waitlist!" leftIcon={true} />
       {/* <AboutWe aos={AOS}/>
         <AboutWhy aos={AOS}/> */}
       {/* <AboutRegistration aos={AOS} />

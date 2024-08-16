@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import logo from '../../assets/logo.png';
-import appStore from '../../assets/app-store.png';
-import googleStore from '../../assets/google-store.png';
+import apple from '../../assets/apple.svg';
+import android from '../../assets/android.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
@@ -19,9 +19,33 @@ const Footer = () => {
             <img className="logo" src={logo} alt="" />
           </NavLink>
 
-          <div className="google-app">
-            <img src={appStore} alt="" />
-            <img src={googleStore} alt="" />
+          <div className="google-app text-white font-medium">
+            <div className="border border-white rounded-[0.54rem] w-full max-w-[11.38rem] flex items-center gap-3 px-4 py-2 h-full">
+              <img
+                className="block w-full max-w-[1.81rem]"
+                src={apple}
+                alt="apple"
+              />
+              <div>
+                <h6 className="text-[0.7rem] leading-[1rem]">Coming soon</h6>
+                <p className="text-base text-[1rem] leading-[1rem]">
+                  App Store
+                </p>
+              </div>
+            </div>
+            <div className="border border-white rounded-[0.54rem] w-full max-w-[11.38rem] flex items-center gap-3 px-4 py-2 h-full">
+              <img
+                className="block w-full max-w-[1.81rem]"
+                src={android}
+                alt="android"
+              />
+              <div>
+                <h6 className="text-[0.7rem] leading-[1rem]">Coming soon</h6>
+                <p className="text-base text-[1rem] leading-[1rem]">
+                  App Store
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

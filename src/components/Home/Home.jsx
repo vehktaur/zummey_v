@@ -20,7 +20,7 @@ const Home = () => {
       <PremiumService />
       <Registration />
       <SmartBusiness />
-      <ComingSoon />
+      <ComingSoon heading="Coming Soon!" />
     </div>
   );
 };
