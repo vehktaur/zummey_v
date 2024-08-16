@@ -6,8 +6,8 @@ import googleStore from '../../../assets/google-store.png';
 import heroBoth from '../../../assets/hero-both.png';
 import rider from '../../../assets/hero_rider.jfif';
 import heroPackage from '../../../assets/hero_package.png';
-import payment from '../../../assets/payed.png';
-import delivered from '../../../assets/delivered.png';
+import payment from '../../../assets/payment.svg';
+import delivered from '../../../assets/delivered.svg';
 import star from '../../../assets/hero-star.png';
 import underline from '../../../assets/underline_swirl.svg';
 import { Typewriter } from 'react-simple-typewriter';
@@ -176,8 +176,22 @@ const Hero = () => {
             className={`${css.hero_right} ${css.animate}`}
             ref={heroRightRef}
           >
-            <img src={payment} alt="" className={css.payment} />
-            <img src={delivered} alt="" className={css.delivered} />
+            <div className="flex items-center gap-2 p-2 backdrop-blur-[15.5px] bg-[#f2f2f2be] rounded-[0.81rem] max-w-[10.37rem] absolute top-[40%] left-[30%] z-[1]">
+              <img src={delivered} alt="delivered" />
+              <div className="grid font-medium text-sm">
+                <span>Delievered </span>
+                <span>Successfully</span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 p-2 backdrop-blur-[15.5px] bg-[#F2F2F282] rounded-[0.81rem] max-w-[15rem] absolute right-[-10%] bottom-[40%] z-[1]">
+              <img src={payment} alt="delivered" />
+              <div className="grid font-medium text-sm">
+                <span>Payment Received </span>
+                <span>₦400</span>
+              </div>
+            </div>
+
             <div className="flex gap-6 items-center">
               <div className="h-[22.68rem] w-[15rem] rounded-[77.5rem] overflow-hidden border-[length:3px] border-zummey-orange">
                 <img
