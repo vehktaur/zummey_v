@@ -41,7 +41,7 @@ const CleanEnvironment = () => {
             </div>
           </div>
 
-          <div className="rounded-[0.625rem] border-[length:3px] border-zummey-orange xl:max-w-[26.82rem] shadow-zummey-blue max-h-[26rem] me-auto relative">
+          <div className="rounded-[0.625rem] border-[length:3px] border-zummey-orange xl:max-w-[26.82rem] shadow-zummey-blue max-h-[26rem] mx-auto md:mx-0 md:me-auto relative">
             <img
               className="hidden xl:block absolute left-[83%] -bottom-[6.5rem] w-[25rem] h-[23rem]"
               src={curve}

@@ -12,8 +12,8 @@ const ServeCustomers = () => {
   return (
     <div className="px-5 sm:~px-8/16 py-12 mt-10">
       <div className="max-w-[80rem] mx-auto">
-        <div className="flex flex-col md:flex-row items-end justify-between ~gap-12/16">
-          <div className="max-w-[30rem]">
+        <div className="flex flex-col items-center md:flex-row justify-between ~gap-12/16 text-center md:text-left">
+          <div className="md:max-w-[30rem]">
             <h1 className="font-semibold ~text-[2rem]/[2rem] relative ~mb-6/8">
               We help you serve your customers better
               <span className="absolute -top-6 ~right-[0.5rem]/[-3rem] z-[-1] ~w-[2.75rem]/[4.56rem]">
@@ -24,7 +24,7 @@ const ServeCustomers = () => {
                 />
               </span>
             </h1>
-            <p className="max-w-[28.5rem] mx-auto md:mx-0">
+            <p className="md:max-w-[28.5rem] mx-auto md:mx-0">
               Your customers deserve the best service without having to pay so
               much for delivery. We believe that getting orders delivered should
               be affordable and convenient, ensuring that your customers have a
@@ -32,7 +32,7 @@ const ServeCustomers = () => {
               Zummey to serve your customers better and help your business grow
             </p>
 
-            <a href="/location" className="btn-flex max-w-[11.56rem] ~mt-8/12">
+            <a href="/location" className="btn-flex max-w-[11.56rem] ~mt-8/12 mx-auto md:mx-0">
               Join Zummey
               <FontAwesomeIcon
                 icon={faArrowRight}
