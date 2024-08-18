@@ -20,28 +20,32 @@ const Footer = () => {
           </NavLink>
 
           <div className="google-app text-white font-medium">
-            <div className="border border-white rounded-[0.54rem] w-full max-w-[11.38rem] flex items-center gap-3 px-4 py-2 h-full">
+            <div className="border border-white rounded-[0.54rem] justify-center w-full ~max-w-[9.88rem]/[11.38rem] flex items-center ~gap-2/3 px-4 py-2 h-full">
               <img
-                className="block w-full max-w-[1.81rem]"
+                className="block w-full ~max-w-[1.7rem]/[1.81rem]"
                 src={apple}
                 alt="apple"
               />
               <div>
-                <h6 className="text-[0.7rem] leading-[1rem]">Coming soon</h6>
-                <p className="text-base text-[1rem] leading-[1rem]">
+                <h6 className="~text-[0.6rem]/[0.7rem] leading-[1rem] whitespace-nowrap">
+                  Coming soon
+                </h6>
+                <p className="~text-sm/base text-[1rem] leading-[1rem] whitespace-nowrap">
                   App Store
                 </p>
               </div>
             </div>
-            <div className="border border-white rounded-[0.54rem] w-full max-w-[11.38rem] flex items-center gap-3 px-4 py-2 h-full">
+            <div className="border border-white rounded-[0.54rem] w-full ~max-w-[9.88rem]/[11.38rem] flex justify-center items-center gap-3 px-4 py-2 h-full">
               <img
-                className="block w-full max-w-[1.81rem]"
+                className="block w-full ~max-w-[1.7rem]/[1.81rem]"
                 src={android}
                 alt="android"
               />
               <div>
-                <h6 className="text-[0.7rem] leading-[1rem]">Coming soon</h6>
-                <p className="text-base text-[1rem] leading-[1rem]">
+                <h6 className="~text-[0.6rem]/[0.7rem] leading-[1rem] whitespace-nowrap">
+                  Coming soon
+                </h6>
+                <p className="~text-sm/base text-[1rem] leading-[1rem] whitespace-nowrap">
                   App Store
                 </p>
               </div>

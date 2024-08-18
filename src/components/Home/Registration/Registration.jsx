@@ -95,7 +95,7 @@ const Registration = () => {
           </div>
 
           <a href="#notify" className="block">
-            <button className="btn-flex " data-aos="fade-right">
+            <button className="btn-flex mt-12" data-aos="fade-right">
               Start using Zummey{' '}
               <FontAwesomeIcon
                 icon={faArrowRight}
@@ -120,9 +120,9 @@ const Registration = () => {
           />
         </div>
 
-        <div className="mobile_btn">
+        <div className="mobile_btn mt-4">
           <a href="#notify" className="get_notified">
-            <button className="btn-flex ~mt-10/16" data-aos="fade-right">
+            <button className="btn-flex" data-aos="fade-right">
               Start using Zummey{' '}
               <FontAwesomeIcon
                 icon={faArrowRight}

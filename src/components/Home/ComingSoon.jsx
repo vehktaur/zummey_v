@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { NavLink, Link } from 'react-router-dom';
 
-const ComingSoon = ({ heading }) => {
+const ComingSoon = ({ heading, leftIcon }) => {
   const previews = [
     appPreview,
     appPreview2,
@@ -30,9 +30,9 @@ const ComingSoon = ({ heading }) => {
       <div className="max-w-[80rem] mx-auto">
         <div className="flex flex-col md:flex-row-reverse gap-10 items-center justify-around">
           <div className="~pe-0/12">
-            <h2 className="font-bold relative text-[2rem] md:~text-[2rem]/[4.37rem] md:~leading-[2rem]/[5rem] z-[1]">
+            <h2 className="font-bold max-w-fit mx-auto md:mx-0 relative text-[2rem] md:~text-[2rem]/[4.37rem] md:~leading-[2rem]/[5rem] z-[1]">
               {heading}
-              <span className="absolute bottom-0 -top-[4rem] ~right-[5rem]/[-3rem] z-[-1] ~w-[2rem]/[4.56rem]">
+              <span className={`absolute bottom-0 ${leftIcon ? 'right-[97%] [transform:rotateY(180deg)] -top-[4rem] ' : 'left-[97%] -top-[4rem] '} z-[-1] ~w-[2rem]/[4.56rem]`}>
                 <img
                   className="object-fit block w-full h-full"
                   src={sparkle}

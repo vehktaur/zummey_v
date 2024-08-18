@@ -161,7 +161,11 @@ const Hero = () => {
               </button>
             </NavLink>
             <p className={`${css.call__text} pb-6 flex ~gap-2/3 items-center`}>
-              <img className="block ~w-[1rem]/[1.37rem]" src={phone} alt="phone" />
+              <img
+                className="block ~w-[1rem]/[1.37rem]"
+                src={phone}
+                alt="phone"
+              />
               Call us for a delivery instead:{' '}
               <strong className="inline-block relative">
                 09068499532
@@ -175,18 +179,20 @@ const Hero = () => {
             className={`${css.hero_right} ${css.animate}`}
             ref={heroRightRef}
           >
-            <div className="flex items-center gap-2 p-2 backdrop-blur-[15.5px] bg-[#f2f2f2be] rounded-[0.81rem] max-w-[10.37rem] absolute top-[40%] left-[30%] z-[1]">
-              <img src={delivered} alt="delivered" />
-              <div className="grid font-medium text-sm">
+            <div className="flex items-center gap-2 p-2 backdrop-blur-[15.5px] bg-[#f2f2f2af] rounded-[0.81rem] ~w-[8rem]/[10.37rem] absolute top-[40%] left-[30%] z-[1]">
+              <img className="~w-7/10" src={delivered} alt="delivered" />
+              <div className="grid font-medium ~text-xs/sm">
                 <span>Delievered </span>
                 <span>Successfully</span>
               </div>
             </div>
 
-            <div className="flex items-center gap-2 p-2 backdrop-blur-[15.5px] bg-[#F2F2F282] rounded-[0.81rem] max-w-[15rem] absolute ~right-[-3rem]/[-4rem] bottom-[15%] sm:bottom-[30%] z-[1]">
-              <img src={payment} alt="delivered" />
-              <div className="grid font-medium text-sm">
-                <span>Payment Received </span>
+            <div className="flex items-center gap-2 p-2 backdrop-blur-[15.5px] bg-[#f2f2f2af] rounded-[0.81rem] ~w-[10.5rem]/[13rem] absolute ~right-[-1rem]/[-4rem] bottom-[15%] sm:bottom-[30%] z-[1]">
+              <img className="~w-7/10" src={payment} alt="delivered" />
+              <div className="grid font-medium ~text-xs/sm">
+                <span className="inline-block whitespace-nowrap">
+                  Payment Received{' '}
+                </span>
                 <span className="text-[#DE7E5D]">₦400</span>
               </div>
             </div>
