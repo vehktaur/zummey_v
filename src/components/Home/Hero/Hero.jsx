@@ -17,6 +17,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 // These are imports for scroll trigger
 import { gsap, Power4 } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
@@ -32,6 +33,18 @@ const Hero = () => {
     'Accessories',
     'Waybill'
   ];
+
+  useGSAP(() => {
+    gsap.from(`.${css.hero_star}`, {
+      opacity: 0,
+      scale: 0,
+      duration: 2,
+      scrollTrigger: {
+        trigger: heroLeftRef.current,
+        start: 'top 70%'
+      }
+    });
+  }, []);
 
   useEffect(() => {
     let tl = gsap.timeline({
@@ -187,17 +200,17 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex items-center gap-2 p-2 backdrop-blur-[15.5px] bg-[#f2f2f2af] rounded-[0.81rem] ~w-[10.5rem]/[13rem] absolute ~right-[-1rem]/[-4rem] bottom-[15%] sm:bottom-[30%] z-[1]">
+            <div className="flex items-center gap-2 p-2 backdrop-blur-[15.5px] bg-[#f2f2f2af] rounded-[0.81rem] ~w-[10.5rem]/[13rem] absolute ~right-[-1rem]/[-4rem] bottom-[22%] sm:bottom-[30%] z-[1]">
               <img className="~w-7/10" src={payment} alt="delivered" />
               <div className="grid font-medium ~text-xs/sm">
                 <span className="inline-block whitespace-nowrap">
-                  Payment Received{' '}
+                  Payment Received
                 </span>
                 <span className="text-[#DE7E5D]">₦400</span>
               </div>
             </div>
 
-            <div className="flex gap-6 items-center">
+            <div className="flex gap-6 items-center pb-8">
               <div className="h-[22.68rem] w-[15rem] rounded-[77.5rem] overflow-hidden border-[length:3px] border-zummey-orange">
                 <img
                   src={heroPackage}

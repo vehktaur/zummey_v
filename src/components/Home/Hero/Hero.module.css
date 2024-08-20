@@ -17,8 +17,7 @@
   margin: 0 auto;
   position: relative;
   max-width: 80rem;
-  min-height: 85vh;
-  padding: 3em 0;
+  height: clamp(0, 85vh, 42rem);
 }
 
 .get_notified {
